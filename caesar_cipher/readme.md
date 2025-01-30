@@ -12,8 +12,7 @@ This is a basic implementation that works with both uppercase and lowercase lett
 - Python 3.x
 
 ## How to Run
-1. Clone the repository or download the script file.
-   git clone https://github.com/yourusername/caesar-cipher.git
+1. download the script file.
 2. Navigate to the project directory:
    cd caesar-cipher
 3.  Run the Python program:
