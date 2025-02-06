@@ -1,0 +1,34 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mindex ebc7aa7..ce00694 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,2 +1,2 @@[m
+ # Information-and-Network-Security-main[m
+[31m-codes of all the lab programs [m
+[32m+[m[32mcontains all the codes related to this subject and a readme files of it .[m[41m [m
+[1mdiff --git a/hill cipher/code.py b/hill cipher/code.py[m
+[1mdeleted file mode 100644[m
+[1mindex fd08f30..0000000[m
+[1m--- a/hill cipher/code.py[m	
+[1m+++ /dev/null[m
+[36m@@ -1,19 +0,0 @@[m
+[31m-import numpy as np[m
+[31m-[m
+[31m-def hill_cipher_encrypt(plaintext, key_matrix):[m
+[31m-    n = len(key_matrix)[m
+[31m-    plaintext = plaintext.upper().replace(" ", "")[m
+[31m-    if len(plaintext) % n != 0:[m
+[31m-        plaintext += "X" * (n - len(plaintext) % n)[m
+[31m-[m
+[31m-    plaintext_vector = [ord(char) - ord('A') for char in plaintext][m
+[31m-    ciphertext = ""[m
+[31m-    for i in range(0, len(plaintext_vector), n):[m
+[31m-        block = plaintext_vector[i:i + n][m
+[31m-        result = np.dot(key_matrix, block) % 26[m
+[31m-        ciphertext += "".join(chr(num + ord('A')) for num in result)[m
+[31m-    return ciphertext[m
+[31m-[m
+[31m-plaintext = "pratheeksha"[m
+[31m-key_matrix = np.array([[6, 24, 1], [13, 16, 10], [20, 17, 15]])  # Example 3x3 key matrix[m
+[31m-print("Encrypted:", hill_cipher_encrypt(plaintext, key_matrix))[m
+\ No newline at end of file[m
