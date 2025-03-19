@@ -54,6 +54,8 @@ Enter AES Key: Provide the correct key stored in aes_key.txt.
 
 Retrieve Message: If the key is correct, the decrypted message will be displayed.
 
+Google Colab Link: https://colab.research.google.com/drive/1kGtIptK464BvcSG7CXgQ7oIamTuD1Wh_?usp=sharing
+
 # Security Considerations
 
 The AES key must be securely stored and not shared with unauthorized users.
